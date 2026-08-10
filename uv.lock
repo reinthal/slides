@@ -1,0 +1,23 @@
+version = 1
+revision = 3
+requires-python = ">=3.13"
+
+[[package]]
+name = "marp"
+version = "0.9.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/62/23/deb887e485970a407d6cbcd323bd3e8a9937eb4b495bcf5e3882086da666/marp-0.9.0.tar.gz", hash = "sha256:408db80ab382d5bf125220dd7dffcba05e324d0967f4e1028583b54f238b9fbf", size = 11870, upload-time = "2026-08-05T17:32:33.163Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/94/84/4e4a90525b4259d8b0c1d88303ffd0318ca279b8c4d08a1d55625f0a0e7b/marp-0.9.0-py3-none-any.whl", hash = "sha256:b430985d9ecd71c47aa0bbfee29cf8af4f77b10026cc8bf2470d5166fb6b0ad9", size = 16673, upload-time = "2026-08-05T17:32:31.923Z" },
+]
+
+[[package]]
+name = "slides"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "marp" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "marp", specifier = ">=0.9.0" }]

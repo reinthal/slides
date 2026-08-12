@@ -30,7 +30,7 @@ An instrument to measure something
 - Linear Probes: How do they work?
 - What data do we train the probe on?
 - Empirical result: Probing for truth
-- Probe Directions & Causaility
+- Probe Directions & Causality
 - Summary
 
 ---
@@ -53,7 +53,7 @@ An instrument to measure something
 # What data do we train the probe on?
 
 - The pre-unembedding residual stream data
-- There are other types of probes, i.e attention probes. But we train on the residual stream
+- There are other types of probes, i.e. attention probes. But we train on the residual stream
 ![right](./images/attention_zoom.png)
 ---
 # Empirical result: Probing for truth
@@ -90,22 +90,22 @@ Simple, unambiguous factual statements; with fixed templates
 
 # Question:
 - A probe $\theta_A$ was trained on dataset A
-- A is a corpus of texts labaled as poems or shoppinglists
+- A is a corpus of texts labeled as poems or shopping lists
 - The LLM is a 9B parameters mixture-of-experts model
 
-**Will $\theta_A$ generalize to dataset B that also linearly separates poems and shoppinglists?**
+**Will $\theta_A$ generalize to dataset B that also linearly separates poems and shopping lists?**
 
 ---
 
 # Probe Directions & Causality
 
 You have seen:
-- Concepts like truth is can be linearly represented in activation space
+- Concepts like truth can be linearly represented in activation space
 - How to train probes to classify it
 
 Now:
 - Do the models actually use the truth-vector?
-- What happens if we mess with the models interals using this vector?
+- What happens if we mess with the model's internals using this vector?
 
 ---
 
@@ -119,7 +119,7 @@ Now:
 
 # Question:
 
-- How much of an effect do you need classify $\theta$ as casually related to truth?
+- How much of an effect do you need to classify $\theta$ as causally related to truth?
 - What if there is a weak effect? What would you do?
 - What other effects would make a strong causal relation of $\theta$ non-interesting?
 - Why?
@@ -140,7 +140,7 @@ $$
 
 where $p$ is your probe. 
 
-*See Section 6.1 The Geometry of Truth (Marks & Tegemark, 2023) for more details.*
+*See Section 6.1 The Geometry of Truth (Marks & Tegmark, 2023) for more details.*
 
 ---
 # Where do you add the vector? (Activation patching)
